@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="main_form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="851.0" stylesheets="@menuAya.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PatientGeneraleController">
+   <children>
+      <Button fx:id="close" layoutX="792.0" layoutY="-5.0" mnemonicParsing="false" onAction="#close" prefHeight="40.0" prefWidth="63.0" styleClass="close" stylesheets="@menuAya.css" />
+ 		 <Button fx:id="minimize" layoutX="748.0" layoutY="3.0" mnemonicParsing="false" onAction="#minimize" prefHeight="24.0" prefWidth="44.0" styleClass="minimize" stylesheets="@dashboardDesign.css">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="MINUS" size="1.2em" />
+                                 </graphic>
+                              </Button>
+                              
+      <FontAwesomeIcon glyphName="CLOSE" layoutX="817.0" layoutY="22.0" size="1.3em" wrappingWidth="13.300000190734863" />
+      <Text fill="#181616" layoutX="34.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Platforme Cabinet Medical" wrappingWidth="157.7018280029297" />
+      <FontAwesomeIcon glyphName="STETHOSCOPE" layoutX="14.0" layoutY="22.0" size="1.3em" wrappingWidth="19.700024604797363" />
+      <SplitPane dividerPositions="0.28389830508474573" layoutX="1.0" layoutY="37.0" prefHeight="599.0" prefWidth="851.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="leftsectionMenu">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="STETHOSCOPE" layoutX="67.0" layoutY="175.0" size="10em" />
+                  <Text fill="WHITE" layoutX="61.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENUE Admin" textAlignment="CENTER" wrappingWidth="116.90180969238281">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="logout" layoutX="22.0" layoutY="540.0" mnemonicParsing="false" onAction="#logout" prefHeight="36.0" prefWidth="44.0" styleClass="logout-btn" stylesheets="@dashboardDesign.css" />
+                  <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" layoutX="33.0" layoutY="567.0" size="2em" />
+                  <Label layoutX="77.0" layoutY="550.0" text="Sign out" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </Label>
+                  <Line endX="100.0" layoutX="119.0" layoutY="291.0" startX="-100.0" stroke="WHITE" strokeWidth="4.0" />
+                  <Button fx:id="backButton" layoutX="22.0" layoutY="491.0" mnemonicParsing="false" onAction="#back" prefHeight="36.0" prefWidth="44.0" styleClass="logout-btn" stylesheets="@dashboardDesign.css" />
+                  <FontAwesomeIcon fill="WHITE" glyphName="BACKWARD" layoutX="34.0" layoutY="516.0" size="1.8em" />
+                  <Label layoutX="77.0" layoutY="499.0" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <FontAwesomeIcon fill="#336347" glyphName="USER_MD" layoutX="258.0" layoutY="179.0" selectionFill="#a81919" size="10em" />
+                  <Text layoutX="238.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sectionMenuFont" text="Patient" underline="true">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Text>
+                  
+                  <Button fx:id="ModifierButton" layoutX="351.0" layoutY="308.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="48.0" prefWidth="158.0" styleClass="sectionMenuButton" text="Modifier" />
+                  <Button fx:id="AjouterButton" layoutX="105.0" layoutY="308.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="48.0" prefWidth="158.0" styleClass="sectionMenuButton" text="Ajouter" />
+                  <Button fx:id="SupprimerButton" layoutX="112.0" layoutY="401.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="48.0" prefWidth="158.0" styleClass="sectionMenuButton" text="supprimer">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="351.0" layoutY="401.0" mnemonicParsing="false" onAction="#afficher" prefHeight="48.0" prefWidth="158.0" styleClass="sectionMenuButton" text="afficher patient">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

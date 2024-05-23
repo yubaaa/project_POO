@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="application.afficherController">
+   <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <Button fx:id="backButton" layoutX="37.0" layoutY="40.0" mnemonicParsing="false" onAction="#back" styleClass="logout-btn" stylesheets="@dashboardDesign.css" text="back" />
+      </children>
+   </AnchorPane>
+    <TableView fx:id="patientTable">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" />
+            <TableColumn fx:id="roleColumn" text="role" />
+            <TableColumn fx:id="nomColumn" text="Nom" />
+            <TableColumn fx:id="prenomColumn" text="Prénom" />
+            <TableColumn fx:id="numColumn" text="num_tel" />
+            <TableColumn fx:id="emailColumn" text="email" />
+            <TableColumn fx:id="dateNaissanceColumn" text="Date de Naissance" />
+            <TableColumn fx:id="sexeColumn" text="sexe" />
+        </columns>
+    </TableView>
+</VBox>

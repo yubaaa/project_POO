@@ -1,0 +1,39 @@
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.close:hover{
+    -fx-background-color:#ff4d5f;
+}
+.minimize{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.minimize:hover{
+    -fx-background-color:#d7d4d4;
+}
+
+.logout-btn{
+    -fx-cursor:hand;
+    -fx-background-color:#2ca46e;
+    -fx-background-radius:20px;
+}
+.logout-btn:hover{
+    -fx-background-color:#28bb77;
+}
+.appbar{
+    -fx-background-color:#e9f5f4;
+}
+.leftsectionMenu{
+    -fx-background-color:linear-gradient(to bottom right, #449d6b, #633364);
+}
+.sectionMenuButton{
+    -fx-font-family:"Arial";
+    -fx-font-style: bold;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color:linear-gradient(to bottom right, #449d6b, #633364);
+}
+.sectionMenuButton:hover{
+    -fx-background-color: linear-gradient(to bottom right, #66c28d, #875687);
+}
